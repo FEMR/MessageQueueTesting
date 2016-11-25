@@ -31,7 +31,7 @@ public class Send {
             String json = gson.toJson( object );
 
             channel.basicPublish("", QUEUE_NAME, null, json.getBytes("UTF-8"));
-            System.out.println(" [x] Sent '" + message + "'");
+            System.out.println(" [x] Sent '" + json + "'");
 
             channel.close();
             connection.close();
