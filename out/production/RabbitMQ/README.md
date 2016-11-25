@@ -1,2 +1,0 @@
-# MessageQueueTesting
-MQs!
